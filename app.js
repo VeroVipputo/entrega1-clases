@@ -15,6 +15,11 @@ class ProductManager{
          if (productDb) {
             return 'se encuentra el producto'
          }
+
+         if (newItem.title === ''){
+            return 'completar con titulo'
+         }
+
          if (this.products.length===0){
             newItem.id = 1
             this.products.push(newItem)
