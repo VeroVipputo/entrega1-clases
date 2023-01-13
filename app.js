@@ -6,7 +6,13 @@ class ProductManager{
         this.products = [];
     }
     getProducts = ()=>this.products
-    getProductbyId = (id)=>{}
+    getProductbyId = (id)=>{
+        const productDb = this.products.find(product=>product.id==id);
+        if(!productDb){
+            return `no existe el producto con id: ${id}`
+        }
+        return null;
+    }
 
     addProduct = (newItem)=>{
         const productDb = this.products.find(product => product.code === newItem.code);
