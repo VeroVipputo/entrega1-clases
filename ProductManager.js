@@ -37,7 +37,7 @@ class ProductManager{
   const productos = new ProductManager();
 
 console.log(productos.addProduct({
-    title: 'pencil',
+    title: 'Pencil',
     description: 'pencil of graphite',
     price: 5,
     thumnail: 'path of image',
